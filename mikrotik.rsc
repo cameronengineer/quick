@@ -1,4 +1,4 @@
-# 2024-10-31 16:43:00 by RouterOS 7.10.2
+# 2024-10-31 16:43:41 by RouterOS 7.10.2
 # software id = QTD3-T1DN
 #
 # model = RB960PGS
@@ -9,6 +9,7 @@ add admin-mac=2C:C8:1B:A2:7B:CD auto-mac=no comment="Default bridge" name=\
 /interface ethernet
 set [ find default-name=sfp1 ] auto-negotiation=no
 /interface vlan
+add interface=default name=cloudtraffic vlan-id=1
 add interface=default name=guest vlan-id=30
 add interface=default name=trusted vlan-id=10
 add interface=default name=untrusted vlan-id=20
